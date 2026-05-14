@@ -1,0 +1,28 @@
+# Core
+numpy>=1.26
+pandas>=2.2
+pydantic>=2.5
+
+# Model + training (Kaggle/Colab GPU)
+# Pinned-ish to versions that compose well together; relax if you're on GPU hardware
+# transformers>=4.46    # uncomment when training
+# accelerate>=1.0       # uncomment when training
+# peft>=0.13            # uncomment when training
+# trl>=0.12             # uncomment when training
+# bitsandbytes>=0.44    # uncomment when training (CUDA only)
+# unsloth>=2024.10      # the wrapper that makes QLoRA 2x faster on a T4
+
+# Inference (optional — only needed when serving a trained model)
+# torch>=2.5
+# huggingface-hub>=0.26
+
+# Eval — these matter even without GPU
+sacrebleu>=2.4
+
+# Utilities
+tqdm>=4.66
+python-dotenv>=1.0
+PyGithub>=2.4
+
+# Testing
+pytest>=7.4
